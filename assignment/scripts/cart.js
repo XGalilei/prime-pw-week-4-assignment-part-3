@@ -20,8 +20,13 @@ function empty() {
   }
 }
 
+console.log(`Basket is ${basket}`);
+
 console.log(`==Testing addItem==`);
+console.log(`Adding apples (expect true)`, addItem('apples'));
+console.log(`Adding milk`, addItem('milk'));
 console.log(`==Testing listItems==`);
+console.log(`Basket is now ${basket}`);
 
 console.log(`==Testing empty==`);
 console.log(`Emptying basket:`);
