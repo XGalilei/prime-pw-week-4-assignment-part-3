@@ -2,6 +2,7 @@ console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
 let basket = [];
+const maxItems = 5;
 
 function addItem(item) {
   basket.push(item);
@@ -18,6 +19,10 @@ function empty() {
   while(basket.length > 0) {
     basket.pop();
   }
+}
+
+function isFull() {
+  return basket.length === maxItems;
 }
 
 console.log(`Basket is ${basket}`);
